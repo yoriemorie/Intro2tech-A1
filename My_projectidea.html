@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>My Website Presentation</title>
+ <meta charset="UTF-8">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body style="background: rgb(131,58,180);background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 34%, rgba(252,176,69,1) 100%);">
+<ul>
+  <li><a href="file:///C:/Users/Anthony%20Hudd/Desktop/Intro2tech-A1-me_page.html">About Me</a></li>
+  <li><a href="file:///C:/Users/Anthony%20Hudd/Desktop/Intro2tech-A1-interest_page..html">My Interest in IT</a></li>
+  <li><a href="file:///C:/Users/Anthony%20Hudd/Desktop/Ideal_job.html">My Ideal job</a></li>
+  <li><a href="file:///C:/Users/Anthony%20Hudd/Desktop/My_Personality.html">Personal Profile</a></li>
+  <li><a href="file:///C:/Users/Anthony%20Hudd/Desktop/My_Personality.html">Project Idea</a></li>
+
+</ul>
+<h1 style="font-family:cursive;font-size:500%;text-align:center">My Project Idea</h1>
+<p style="font-size:150%;">My project idea is to make a fishing game with the unity game engine. The game will be a visually simple game of fishing. The game will be a player vs bot game and the bot will take on the form of a duck This game will utilize the physics in the unity game engine for the mechanic of using the fishing rod e.g. the force used fling the bait, the velocity the bait travels at, how it brakes water tension when it lands etc. The game will run for a minute and the player has to secure more fish than what the duck steals.</p>
+<br>
+<p style="font-size:150%;">Why did I choose to make a fishing game where you compete against a duck for who can catch the most fish? I choose to make it a game about fishing because I wanted to see how unitys’ game engine physics handles water and its interactions with other solid models. I choose to make it a game about versing a duck because recently there was a famous game about a goose that terrorises a city and it’s called Untitled goose game. This game was made by a Melbourne indie game studio called House House (How Untitled Goose Game went from a gag between mates to a 'cultural fad', 2020). I thought if I were to make a game, I would just piggy back of the success of local talent.</p>
+<br>
+<p style="font-size:150%;">This game will utilize most of unity’s game engine features, starting with unity’s physics engine. The game will use the rigidbody function from the unity physics. This will be used give the fish, fishing rod, bait and duck all sense of mass with their interactions with the game. This feature is important for the fishing aspect as the fish will be generated in different sizes and will therefore have different masses which then affects the mechanic of reeling the rod in i.e. how fast it can be pulled in. Futhermore, by using the addforce and addvelocity functions onto the rigidbodies we create in the unity engine, I can control acceleration of the game assets as well as set inertia for bodies of mass that stay still e.g. water. The whole point of this is to create a more immersive and robust interaction in the game for the player. Also, the game will make use of the physics function onCollisionEnter in order to have collision detection between the hook, fish and ducks beak as precise as possible  and to use the precision of this collision detection along with addvelocity and addforce to dictate the direction and speed of the body that has been acted on.Additionally, the collider2D will be employed to control how tight or loose the hitbox or hurtbox  will wrap around the model of the asset e.g. the hitbox of the fish will only cover their bodies and head but not their fins that stick out which means in order to get interaction with the hurtbox of the hook with the fish, the hook must have a collision detected on the fish’s body.Futhermore, this game will use C# script adding feature in the unity game engine for the purpose of allowing the movement of the rod object and therefore the overall movement of the player, to be set speed at which the player moves on their controller or mouse. This will incorporate well with the previous mentioned functions as this makes the game more varied in its interaction between the in-game assets as the main source of movement will be mainly determined by the player use of the fishing rod e.g. the player can send all the fish flying all over the place if they swing their mouse across the table or they can keep it minimal and packed by using micro movements on their mouse. Also, this game will utilize the in-built audio editors in unity for sound effects and music. This game will use the two main audio components of unity which are Audio listener and Audio source. Audio source will be used to add the sound effects and music. On the other hand, audio listener will be used to edit these audio files by changing the volume, pitch, amplitude etc. This is to give the player audio ques for when they drop a fish or the duck has stolen their fish as well as to just to the overall ambience of the game. Lastly, this game will make use unity’s cross platform engine by releasing on pc and major consoles.</p>
+<br>
+<p style="font-size:150%;">The software needed for this would obviously be unity, other software needed would be 3D models for the fish, fishing rod, duck and hand assets. Along with this there would need to be textures for the water asset and maybe the boat asset. There would also need to be animation software to animate ripples int the water, fish flapping about, the curve of the fishing rod as its casted and the movement of the string of wire when the fishing rod is reeling in. As for hardware, I probably need audio recoding equipment for the fishing rod, duck and boat sound effects.</p>
+<br>
+<p style="font-size:150%;">The skills required to do this would have to be a in depth understanding of the unity game engine and that includes all of the functions previously mentioned and their interactions with each other. Also, would need to have a strong command of C# or javastricpt in order to use the script adding function in unity as it only uses these two programming languages. Additionally, would probably need to know to how to professionally record audio. The feasibility of all this is pretty good because the hardest part of unity to understand is the code put in the scripts which is just C# or javascript and these are open source languages.  </p>
+<br>
+<p style="font-size:150%;">If this project is successful which just means I finish it to the point where I’m happy with it then the outcome will be simple, I will be happy with what I have made and I get to share it with the internet. If a lot of people like then that’s good and if I am the only one that likes it then that’s good too. This will solve my original problem of wanting to make a game. The impact of my successful completion of the project will probably just mean I will make another one, perhaps one with a bigger budget.</p>
+<br>
+<p style="font-size:150%;">Ref:</p>
+<p style="font-size:150%;">ABC News. 2020. How Untitled Goose Game Went From A Gag Between Mates To A 'Cultural Fad'. [online] Available at: <https://www.abc.net.au/news/2019-10-02/untitled-goose-game-goes-from-gag-to-cultural-fad/11567216> [Accessed 22 March 2020].</p>   
+</body>
+</html>
